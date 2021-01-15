@@ -1,0 +1,44 @@
+<!DOCTYPE Html>
+<html>
+<head>
+</head>
+<body>
+
+    
+<canvas id="canvas1" width="800" height="800" style="border:3px solid green" >
+</canvas>
+    <canvas id="canvas2" width="800" height="800" style="border:3px solid green" >
+</canvas>
+    
+    
+<script>
+    
+var canvas = document.getElementById("canvas1");
+ctx = canvas.getContext("2d");
+
+    
+
+
+ctx.transform(1,1,-0.2,1,60,60);
+ctx.fillStyle="green";
+ctx.fillRect(100,100,100,100);    
+        
+</script>      
+         
+<script>
+var canvas = document.getElementById("canvas2");
+ctx = canvas.getContext("2d");
+ctx.fillStyle="yellow";
+ctx.fillRect(100,100,150,100);  
+
+
+    
+ctx.setTransform(1,1,-0.2,1,50,60);
+ctx.fillStyle="green";
+ctx.fillRect(100,100,150,100);    
+</script>    
+        
+      
+   
+</body>
+</html>

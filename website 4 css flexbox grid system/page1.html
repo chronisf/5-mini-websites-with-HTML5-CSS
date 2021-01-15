@@ -1,0 +1,46 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    
+ <meta charset="UTF-8">
+    <title>page1</title>   
+     
+        <style>
+.flex-container {
+  display: flex;
+  width:900px;
+height:900px;    
+  background-color: dimgrey;
+  
+}
+
+.flex-container>div {
+  background-color: antiquewhite;
+    height:200px;
+    width:200px;
+    margin: 10px;
+  padding:10px;
+  font-size: 10px;
+    
+ 
+}
+            
+.flex-container>div:nth-child(1){ 
+    flex-grow: 1;
+}
+            
+.flex-container>div:nth-child(2){ flex-grow: 2;
+}
+</style>
+</head>
+<body>
+  
+    
+    <div class="flex-container">
+<div>1</div>  
+<div>2</div>  
+ 
+    
+</div>
+</body>
+</html>
